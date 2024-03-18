@@ -4,5 +4,9 @@
         <page name='OOP Basic'/>
         <page name='Inheritance'/>
         <page name='Delegate &amp; Protocols'/>
+        <page name='Abstruction'/>
+        <page name='Closures'/>
+        <page name='Asynchronous_Operations Closures'/>
+        <page name='Capturing_values  Closures'/>
     </pages>
 </playground>
