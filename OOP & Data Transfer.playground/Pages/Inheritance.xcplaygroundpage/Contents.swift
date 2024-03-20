@@ -19,22 +19,23 @@ class person {
         self.age = age
     }
 }
+
 class introvert: person {
     let serious = "And then the introverts arrived"
-    init() {
-        super()
-    }
-    func introvertArrivedToProtest {
+//    init() {
+////        super()
+//    }
+    func introvertArrivedToProtest() {
         print("You know things are serious when the introverts arrive")
     }
 }
 
 class drugAddicted: person {
-    init() {
-        super()
-    }
+//    init() {
+//        super()
+//    }
 }
 
-var nexdecade: [introvert]
-var drugaddict: drugAddicted
-
+//var nexdecade: [introvert]
+//var drugaddict: drugAddicted
+//nexdecade[0].introvertArrivedToProtest()

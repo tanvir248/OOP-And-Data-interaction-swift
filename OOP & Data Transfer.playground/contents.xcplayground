@@ -8,5 +8,6 @@
         <page name='Closures'/>
         <page name='Asynchronous_Operations Closures'/>
         <page name='Capturing_values  Closures'/>
+        <page name='Advance Enum'/>
     </pages>
 </playground>
