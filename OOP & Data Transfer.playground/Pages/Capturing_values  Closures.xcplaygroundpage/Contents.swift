@@ -1,28 +1,18 @@
-//: [Previous](@previous)
+//Capturing values using closures
 
-import Foundation
-
-var greeting = "Hello, playground"
-
-print(greeting)
-//: [Next](@next)
-
-var arr: [Int] = [10, 8 ,-5, 7, 11, 14, 0, 10]
-
-var min = arr[0]
-
-for i in arr {
-    if i < min {
-        min = i
+func addGivenNumber(number: Int) -> () -> Int {
+    var total = 0
+    return {
+         total += number
+        return total
     }
 }
-print("Minimum number: \( min)")
 
+let addedNumber5 = addGivenNumber(number: 5)
+print(addedNumber5()) // 5
+print(addedNumber5()) // 10
+print(addedNumber5()) // 15
 
-
-for i in 0..<arr.count {
-    if arr[i] < 1 {
-       arr[i] = 1
-    }
-}
-print(arr)
+let addedNumber10 = addGivenNumber(number: 10)
+print(addedNumber10()) // 10
+print(addedNumber10()) // 20

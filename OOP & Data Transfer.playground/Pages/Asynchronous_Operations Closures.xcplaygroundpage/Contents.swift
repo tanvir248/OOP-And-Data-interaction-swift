@@ -1,7 +1,2 @@
-//: [Previous](@previous)
+//Async operation & completion handler
 
-import Foundation
-
-var greeting = "Hello, playground"
-
-//: [Next](@next)
