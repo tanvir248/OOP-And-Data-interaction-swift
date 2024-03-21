@@ -32,6 +32,7 @@ class Introvert: Person {
     
     var spendTimeInHome: Int
     var socialActivitiesperyear: Int
+    // Straight-forward way to put data on superclass
     init(spendTimeInHome: Int, socialActivitiesperyear: Int, name: String, color: String, height: Float, maritalStatus: String, profession: String, age: Int) {
         self.spendTimeInHome = spendTimeInHome
         self.socialActivitiesperyear = socialActivitiesperyear
@@ -43,12 +44,8 @@ class Introvert: Person {
     }
     //System of polymorphism
     override func personDetails() {
-        print("Name: \(name)")
-        print("color: \(color)")
-        print("height: \(height)")
-        print("maritalStatus: \(maritalStatus)")
-        print("age: \(age)")
-        print("profession: \(profession)")
+        // super.personDetails() is a way to get superclass values from overrried class
+        super.personDetails()
         print("spendTimeInHome: \(spendTimeInHome)")
         print("socialActivitiesperyear: \(socialActivitiesperyear)")
     }
@@ -57,6 +54,7 @@ class Introvert: Person {
 class Student: Person {
     var schoolType : String
     var studyingClass: String
+    // Make a different way to put data on super class initializer
     init(schoolType: String, studyingClass: String, person: Person) {
         self.schoolType = schoolType
         self.studyingClass = studyingClass
