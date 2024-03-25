@@ -11,5 +11,6 @@
         <page name='Inheritance &amp; Enum'/>
         <page name='Touple'/>
         <page name='Polymorphism &amp; Advance Enum'/>
+        <page name='Actors swift'/>
     </pages>
 </playground>
